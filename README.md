@@ -208,6 +208,39 @@ There are eight basic data types in JavaScript. They are:
    
 **[⬆ Back to Top](#table-of-contents)**
 
+13. ### Scope
+
+   Scope determines the accessibility (visibility) of variables.
+   JavaScript has 3 types of scope:
+
+   1. Block Scope:
+
+      The block scope of a variable means   that the variable is accessible within the block
+   ```javascript
+      {
+         let a = 5;
+      }
+   ```
+
+2. Function Scope:
+
+      The Function scope of a variable means   that the variable is accessible within the function.
+   ```javascript
+      function myFunction() {
+         let carName = "Tesla";
+      }
+   ``` 
+
+3. Global Scope:
+
+      Variables declared Globally.
+
+   ```javascript
+      let a = 10; 
+   ``` 
+   
+**[⬆ Back to Top](#table-of-contents)**
+
 
 
 
