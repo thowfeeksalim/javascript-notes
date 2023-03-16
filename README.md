@@ -1,6 +1,6 @@
 # JavaScript Interview Questions & Answers
 
-> Click :star:if you like the project and follow [@thowfeeksalim](https://twitter.com/thowfeeksalim) for more updates. Coding questions available [here](#coding-exercise). PDF and Epub versions available at [actions tab](https://github.com/thowfeeksalim/JavaScript-Interview-Questions/actions).
+
 
 
 
