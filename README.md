@@ -11,11 +11,11 @@
     <a href="#about-the-project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://thowfeeksalim.github.io/naviquest/">View Demo</a>
+<!--     <a href="https://thowfeeksalim.github.io/naviquest/">View Demo</a>
     ·
     <a href="https://github.com/thowfeeksalim/naviquest/issues">Report Bug</a>
     ·
-    <a href="https://github.com/thowfeeksalim/naviquest/issues">Request Feature</a>
+    <a href="https://github.com/thowfeeksalim/naviquest/issues">Request Feature</a> -->
   </p>
 </p>
 
