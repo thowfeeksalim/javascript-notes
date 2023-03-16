@@ -163,9 +163,10 @@
 
 10. ### DOM
 
-   Document object model is a structured representation of html documents. Allows javascript to access html elements and styles to manipulate them.
+     Document object model is a structured representation of html documents.   Allows javascript to access html elements and styles to manipulate them.
 
 
+<a href=#><img src="/images/DOM.jpg"></a>
     
    
 **[⬆ Back to Top](#table-of-contents)**
