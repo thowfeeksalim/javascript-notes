@@ -1,7 +1,7 @@
 <br>
 
 <a href=#><img src="/images/ban1.gif"></a>
-<h1 align="center"> <strong>  🤔JavaScript Interview Questions & Answers </strong> </h1> 
+<h1 align="center"> <strong>  JavaScript Notes📒 </strong> </h1> 
 
 
 
@@ -10,14 +10,15 @@
 ### Table of Contents
 
 | No. | Questions                                                                                                                                                         |
-| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [What is This Keyword ](#what-is-This-Keyword)                                         |
-| 2   | [What is Regular functions ](#what-is-Regular-functions)  
-| 3   | [What is Arrow functions ](#what-is-Arrow-functions) 
-| 4   | [What is Rest patterns ](#what-is-Rest-patterns) 
-| 5   | [What is Destructuring ](#what-is-Destructuring) 
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [This Keyword ](#This-Keyword)
+| 2   | [Regular functions ](#Regular-functions)  
+| 3   | [Arrow functions ](#Arrow-functions) 
+| 4   | [Rest patterns ](#Rest-patterns) 
+| 5   | [Destructuring ](#Destructuring)
+| 6   | [Maps](#Maps) 
 
-1. ### What is This Keyword
+1. ### This Keyword
 
    **this keyword** refers to the current execution context or the current object. 
 
@@ -28,14 +29,13 @@
               console.log(Hello, my name is ${this.name} );
             }
           };
-          person.sayHello();        //"Hello, my name is TFK"
-        
+          person.sayHello();        //"Hello, my name is TFK" 
     ```
 **[⬆ Back to Top](#table-of-contents)**
    
 
    
-2. ### What is Regular functions
+2. ### Regular function
 
    **A regular function** is a function that is defined using the function keyword. 
 
@@ -44,12 +44,11 @@
         console.log(Hello, ${name}!);
       }
       greet('TFK');          // "Hello, TFK!"
-      
     ```
    
 **[⬆ Back to Top](#table-of-contents)**
    
-3. ### What is  Arrow function
+3. ###  Arrow function
 
    An **Arrow function** is a more concise syntax for defining a function. It is defined using the `=>` arrow operator, which is why it is called an arrow function. 
 
@@ -58,12 +57,11 @@
     const double = (x) => {
         return x * 2;
       };
-    
     ```
    
 **[⬆ Back to Top](#table-of-contents)**
 
-4. ### What is Rest patterns
+4. ### Rest patterns
 
    **Rest patterns** are a feature of the language that allow you to collect multiple function arguments into a single array. The rest pattern is denoted by three dots `...` 
  
@@ -75,70 +73,39 @@
       }
       printArgs('T', 'F', 'K'); //['T', 'F', 'K']
       };
-    
     ```
    
 **[⬆ Back to Top](#table-of-contents)**
 
-5. ### What is Destructuring
+5. ### Destructuring
 
    Extract values from arrays and objects into separate variables using a concise syntax.
  
 
 
      ```javascript
-        const person = {
-        name: 'TFK',
-        age: 21
+   const person = {
+       name: 'TFK',
+       age: 21
     };
     const { name, age } = person;
     console.log(name); //'TFK'
     console.log(age); //21  
-      
+    ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+5. ### Maps
+
+   Maps are a data structure in JavaScript that allow you to store key-value pairs. Unlike objects, which use strings as keys, maps can use any value as a key, including objects and functions.
+ 
+
+
+     ```javascript
+   const myMap = new Map();
+   myMap.set('name', 'TFK');
+   console.log(myMap.get('name')); //'TFK'
     ```
    
 **[⬆ Back to Top](#table-of-contents)**
-
-
-<!-- ### Coding Exercise
-
-   #### 1. What is the output of below code
-
-   ```javascript
-   var car = new Vehicle("Honda", "white", "2010", "UK");
-   console.log(car);
-
-   function Vehicle(model, color, year, country) {
-     this.model = model;
-     this.color = color;
-     this.year = year;
-     this.country = country;
-   }
-   
-   ```
-
-   - 1: Undefined
-   - 2: ReferenceError
-   - 3: null
-   - 4: {model: "Honda", color: "white", year: "2010", country: "UK"}
-
-   <details><summary><b>Answer</b></summary>
-   <p>
-
-   ##### Answer: 4
-
-   The function declarations are hoisted similar to any variables. So the placement for `Vehicle` function declaration doesn't make any difference.
-
-   </p>
-   </details>
-
-
-  **[⬆ Back to Top](#table-of-contents)**
--->
- 
-   ## Disclaimer😄
-
-   The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
-
-   Good luck with your interview 😊
 
