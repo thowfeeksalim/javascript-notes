@@ -14,7 +14,8 @@
 | 4   | [Rest patterns ](#Rest-patterns) 
 | 5   | [Destructuring ](#Destructuring)
 | 6   | [Maps](#Maps)
-| 6   | [Prototype](#Prototype)
+| 7   | [Prototype](#Prototype)
+| 8   | [JSON](#JSON)
 
 1. ### This Keyword
 
@@ -93,7 +94,22 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-5. ### Prototype
+5. ### Maps
+
+   Maps are a data structure in JavaScript that allow you to store key-value pairs. Unlike objects, which use strings as keys, maps can use any value as a key, including objects and functions.
+ 
+
+
+     ```javascript
+   const myMap = new Map();
+   myMap.set('name', 'TFK');
+   console.log(myMap.get('name')); //'TFK'
+ 
+    ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+7. ### Prototype
 
    A prototype in JavaScript is a way of defining an object that serves as a blueprint for creating new objects.
  
