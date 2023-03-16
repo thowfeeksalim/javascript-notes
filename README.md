@@ -10,9 +10,10 @@
 ### Table of Contents
 
 | No. | Questions                                                                                                                                                         |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | [What is This Keyword in javascript](#what-is-This-Keyword-in-javascript)                                         |
-| 2   | [What is prototype chain](#what-is-a-prototype-chain)                                                                                                           
+| 2   | [What is Regular functions in javascript](#what-is-Regular-functions-in-javascript)  
+| 3   | [What is Regular functions in javascript](#what-is-Regular-functions-in-javascript)  
 
 1. ### What is This Keyword in javascript
 
@@ -32,18 +33,23 @@
    
 
    
+2. ### What is Regular functions in javascript
 
- 2. ### What is a prototype chain
+   **A regular function** is a function that is defined using the function keyword. 
 
-      **this keyword** refers to the current execution context or the current object. 
+     ```javascript
+    function greet(name) {
+        console.log(Hello, ${name}!);
+      }
+      greet('TFK');          // "Hello, TFK!"
+    
+        
+    ```
+   
+**[⬆ Back to Top](#table-of-contents)**
+   
 
-
-      The prototype on object instance is available through **Object.getPrototypeOf(object)** or **\_\_proto__** property whereas prototype on constructors function is       available through **Object.prototype**.
-
-
-
-   **[⬆ Back to Top](#table-of-contents)**
-
+   
 
 
 
@@ -61,6 +67,7 @@
      this.year = year;
      this.country = country;
    }
+   
    ```
 
    - 1: Undefined
