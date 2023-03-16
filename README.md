@@ -1,9 +1,6 @@
 <br>
-
 <a href=#><img src="/images/ban1.gif"></a>
-<h1 align="center"> <strong>  JavaScript Notes📒 </strong> </h1> 
-
-
+<h1  align="center"> <strong>  JavaScript Notes📒 </strong> </h1> 
 
 ---
 
@@ -17,7 +14,7 @@
 | 4   | [Rest patterns ](#Rest-patterns) 
 | 5   | [Destructuring ](#Destructuring)
 | 6   | [Maps](#Maps)
-| 6   | [Maps](#Maps)
+| 6   | [Prototype](#Prototype)
 
 1. ### This Keyword
 
@@ -96,16 +93,21 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-5. ### Maps
+5. ### Prototype
 
-   Maps are a data structure in JavaScript that allow you to store key-value pairs. Unlike objects, which use strings as keys, maps can use any value as a key, including objects and functions.
+   A prototype in JavaScript is a way of defining an object that serves as a blueprint for creating new objects.
  
 
 
      ```javascript
-   const myMap = new Map();
-   myMap.set('name', 'TFK');
-   console.log(myMap.get('name')); //'TFK'
+   function Person(age) {
+         this.age = age;
+   }
+   const myFather = new Person(50);
+   const myMother = new Person(47);
+
+   console.log(`My father is  ${myFather.age} and My mother is ${myMother.age}. `);
+   //My father is 50 and My mother is 47
     ```
    
 **[⬆ Back to Top](#table-of-contents)**
