@@ -1,23 +1,7 @@
 <br>
-<h1 align="center"> <strong>  🤔JavaScript Interview Questions & Answers </strong> </h1> 
-<a href=#><img src="/images/ban1.gif"></a>
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <p align="center">
-    Navigate your world with ease with the Naviquest app by your side.
-    <br />
-    <a href="#about-the-project"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-<!--     <a href="https://thowfeeksalim.github.io/naviquest/">View Demo</a>
-    ·
-    <a href="https://github.com/thowfeeksalim/naviquest/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/thowfeeksalim/naviquest/issues">Request Feature</a> -->
-  </p>
-</p>
+<a href=#><img src="/images/ban1.gif"></a>
+<h1 align="center"> <strong>  🤔JavaScript Interview Questions & Answers </strong> </h1> 
 
 
 
