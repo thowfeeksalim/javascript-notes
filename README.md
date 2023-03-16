@@ -16,7 +16,8 @@
 | 3   | [Arrow functions ](#Arrow-functions) 
 | 4   | [Rest patterns ](#Rest-patterns) 
 | 5   | [Destructuring ](#Destructuring)
-| 6   | [Maps](#Maps) 
+| 6   | [Maps](#Maps)
+| 6   | [Maps](#Maps)
 
 1. ### This Keyword
 
