@@ -17,7 +17,7 @@
 | 4   | [What is Rest patterns ](#what-is-Rest-patterns) 
 | 5   | [What is Destructuring ](#what-is-Destructuring) 
 
-1. ### What is This Keyword ?
+1. ### What is This Keyword
 
    **this keyword** refers to the current execution context or the current object. 
 
@@ -35,7 +35,7 @@
    
 
    
-2. ### What is Regular functions ?
+2. ### What is Regular functions
 
    **A regular function** is a function that is defined using the function keyword. 
 
@@ -49,7 +49,7 @@
    
 **[⬆ Back to Top](#table-of-contents)**
    
-3. ### What is  Arrow function ?
+3. ### What is  Arrow function
 
    An **Arrow function** is a more concise syntax for defining a function. It is defined using the `=>` arrow operator, which is why it is called an arrow function. 
 
@@ -63,7 +63,7 @@
    
 **[⬆ Back to Top](#table-of-contents)**
 
-4. ### What is Rest patterns ?
+4. ### What is Rest patterns
 
    **Rest patterns** are a feature of the language that allow you to collect multiple function arguments into a single array. The rest pattern is denoted by three dots `...` 
  
@@ -80,7 +80,7 @@
    
 **[⬆ Back to Top](#table-of-contents)**
 
-5. ### What is Destructuring ?
+5. ### What is Destructuring
 
    Extract values from arrays and objects into separate variables using a concise syntax.
  
