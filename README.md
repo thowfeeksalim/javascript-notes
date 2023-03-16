@@ -189,9 +189,9 @@
 There are eight basic data types in JavaScript. They are:
 
    ```javascript
-         1. String:Represents textual data.
+         1. String: Represents textual data.
 
-         2. Number:Represents textual data.
+         2. Number: An integer or a floating-point number
 
          3. Bigint: An integer with arbitrary precision.
 
