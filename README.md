@@ -116,13 +116,18 @@
    A prototype in JavaScript is a way of defining an object that serves as a blueprint for creating new objects.
 
      ```javascript
-   function Person(age) {
-         this.age = age;
+   function Person(first, last) {
+   this.firstName = first;
+   this.lastName = last;
    }
-   const myFather = new Person(50);
-   const myMother = new Person(47);
-   console.log(`My father is  ${myFather.age} and My mother is ${myMother.age}. `);
-   //My father is 50 and My mother is 47
+
+   Person.prototype.name = function() {
+   return this.firstName + " " +    this.lastName
+   };
+
+   const myFather = new Person("Salim", "PI");
+   console.log(`My father is ${myFather.name()} `);
+   //My father is Salim PI 
     ```
    
 **[⬆ Back to Top](#table-of-contents)**

@@ -1,8 +1,11 @@
-const add = (function () {
-    let counter = 0;
-    return function () {counter += 1; return counter}
-  })();
-  
-  add();
-  add();
-  // the counter is now 2
+function Person(first, last) {
+  this.firstName = first;
+  this.lastName = last;
+}
+
+Person.prototype.name = function() {
+  return this.firstName + " " + this.lastName
+};
+
+const myFather = new Person("Salim", "PI");
+console.log(`My father is ${myFather.name()} `);
