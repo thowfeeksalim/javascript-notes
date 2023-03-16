@@ -1,6 +1,6 @@
 <br>
-<h1 align="center"> <strong> 🗺 JavaScript Interview Questions & Answers </strong> </h1> 
-<a href=#><img src="/images/banner.gif"></a>
+<h1 align="center"> <strong>  🤔JavaScript Interview Questions & Answers </strong> </h1> 
+<a href=#><img src="/images/ban1.gif"></a>
 
 <!-- PROJECT LOGO -->
 <br />
