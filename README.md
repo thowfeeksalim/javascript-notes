@@ -44,9 +44,7 @@
           person.sayHello();        //"Hello, my name is TFK"
         
     ```
-    
-
-    **[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)**
    
 
    
@@ -58,7 +56,7 @@
 
       The prototype on object instance is available through **Object.getPrototypeOf(object)** or **\_\_proto__** property whereas prototype on constructors function is       available through **Object.prototype**.
 
-    ![Screenshot](images/prototype_chain.png) 
+
 
    **[⬆ Back to Top](#table-of-contents)**
 
@@ -98,7 +96,7 @@
 
 
 
-**[⬆ Back to Top](#table-of-contents)**
+  **[⬆ Back to Top](#table-of-contents)**
 
  
    ## Disclaimer
