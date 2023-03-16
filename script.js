@@ -1,11 +1,12 @@
-function Person(first, last) {
-  this.firstName = first;
-  this.lastName = last;
-}
+let myPromise = new Promise(function(myResolve, myReject) {
+  // "Producing Code"
 
-Person.prototype.name = function() {
-  return this.firstName + " " + this.lastName
-};
+  myResolve(); // when successful
+  myReject();  // when error
+  });
 
-const myFather = new Person("Salim", "PI");
-console.log(`My father is ${myFather.name()} `);
+  // "Consuming Code"
+  myPromise.then(
+  function(value) { /* code if successful */ },
+  function(error) { /* code if some error */ }
+);

@@ -20,6 +20,13 @@
 | 10  | [Closure](#Closure)
 | 11  | [DOM](#DOM)
 | 12  | [Data Types](#Data-Types)
+| 13  | [Scope](#Scope)
+| 14  | [Timer](#Timer)
+| 15  | [Event loop](#Event-Loop)
+| 16  | [Promise Object](#Promise-Object)
+
+event loop
+
 
 
 1. ### Javascript
@@ -241,7 +248,70 @@ There are eight basic data types in JavaScript. They are:
    
 **[⬆ Back to Top](#table-of-contents)**
 
+14. ### Timer
+
+   The timer is used to delay the execution of the program or to execute the JavaScript code in a regular time interval. 
+ 
+1. setTimeout()
+
+The setTimeout() function helps the    users to delay the execution of code.
+ ```javascript
+ setTimeout(function, milliseconds)   
+ ```
+2. setInterval()
+
+It executes the specified function repeatedly after a time interval.
+ ```javascript
+   setInterval(function, milliseconds)  
+ ```
+   
+**[⬆ Back to Top](#table-of-contents)**
+
+15. ### Event Loop
+
+   The **Event Loop** is responsible for managing the execution of code in a non-blocking and asynchronous manner. 
+
+The Event Loop has one simple job to monitor the Call Stack and the Callback Queue.If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
 
 
+```javascript
+console.log('1');
+setTimeout(() => console.log('2'), 0);
+console.log('3'); //Output:   1  3  2
+```
+
+Here's a high-level overview of how the Event loop works in JavaScript:
+
+1. When you execute your code, it gets added to a queue of tasks to be executed.
+2. The event loop continuously monitors this queue for tasks that are ready to be executed.
+3. When a task is ready, the event loop moves it from the queue to the call stack, where it is executed.
+
+4. While a task is executing, other tasks can continue to be added to the queue.
+
+5. When a task is complete, it is removed from the call stack, and the event loop checks the queue for the next task to execute.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 
+16. ### Promise Object
+
+
+Promises in JavaScript are a way to handle asynchronous operations, such as network requests or file I/O etc.
+   The Promise object contains both the producing code and calls to the consuming code.
+
+
+   ```javascript
+   //Producing Code
+   let myPromise = new Promise(function(myResolve, myReject) {
+   myResolve(); // when successful
+   myReject();  // when error
+   });
+   
+   //Consuming Code
+   myPromise.then(
+   function(value) { /* code if successful */ },
+   function(error) { /* code if some error */ }
+);
+   ```
+   
+**[⬆ Back to Top](#table-of-contents)**
