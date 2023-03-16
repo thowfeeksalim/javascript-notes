@@ -1,6 +1,14 @@
-# JavaScript Interview Questions & Answers
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![pull][pull-requests-shield]][pull-requests-url]
+[![Issues][issues-shield]][issues-url]
+<a href="https://twitter.com/intent/follow?screen_name=thowfeeksalim6">
+        <img src="https://img.shields.io/twitter/follow/thowfeeksalim6?style=social&logo=twitter"
+            alt="follow on Twitter"></a>
+<a href=#><img src="/16.gif"></a>
 
-
+<br>
+<h1 align="center"> <strong> JavaScript Interview Questions & Answers </strong> </h1> 
 
 
 
