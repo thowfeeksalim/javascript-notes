@@ -16,10 +16,12 @@
 | 6   | [Maps](#Maps)
 | 7   | [Prototype](#Prototype)
 | 8   | [JSON](#JSON)
+| 9   | [Closure](#Closure)
+| 10  | [DOM](#DOM)
 
 1. ### This Keyword
 
-   **this keyword** refers to the current execution context or the current object. 
+   **This keyword** refers to the current execution context or the current object. 
 
     ```javascript
     const person = {
@@ -36,7 +38,7 @@
    
 2. ### Regular function
 
-   **A regular function** is a function that is defined using the function keyword. 
+   **Regular function** is a function that is defined using the function keyword. 
 
      ```javascript
     function greet(name) {
@@ -94,7 +96,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-5. ### Maps
+6. ### Maps
 
    Maps are a data structure in JavaScript that allow you to store key-value pairs. Unlike objects, which use strings as keys, maps can use any value as a key, including objects and functions.
  
@@ -112,8 +114,6 @@
 7. ### Prototype
 
    A prototype in JavaScript is a way of defining an object that serves as a blueprint for creating new objects.
- 
-
 
      ```javascript
    function Person(age) {
@@ -121,10 +121,51 @@
    }
    const myFather = new Person(50);
    const myMother = new Person(47);
-
    console.log(`My father is  ${myFather.age} and My mother is ${myMother.age}. `);
    //My father is 50 and My mother is 47
     ```
    
 **[⬆ Back to Top](#table-of-contents)**
+
+8. ### JSON
+
+   JSON stands for "JavaScript Object Notation". It is a lightweight and easy-to-read format used for transmitting data between web servers and web applications.
+
+
+     ```javascript
+   {"name":"John", "age":30, "car":null}
+    ```
+   
+**[⬆ Back to Top](#table-of-contents)**
+
+9. ### Closure
+
+   A closure is a function having access to the parent scope, even after the parent function has closed.
+
+
+     ```javascript
+   const add = (function () {
+   let counter = 0;
+   return function () {counter += 1; return counter}
+   })();
+
+   add();
+   add();
+   // the counter is now 2
+    ```
+   
+**[⬆ Back to Top](#table-of-contents)**
+
+10. ### DOM
+
+   Document object model is a structured representation of html documents. Allows javascript to access html elements and styles to manipulate them.
+
+
+    
+   
+**[⬆ Back to Top](#table-of-contents)**
+
+
+
+
 
