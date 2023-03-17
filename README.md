@@ -26,9 +26,12 @@
 | 16  | [Promise Object](#Promise-Object)
 | 17  | [Hoisting](#Hoisting)
 | 18  | [Variable Declaration vs Assignment vs Initialization](#Variable-Declaration-vs-Assignment-vs-Initialization)
-| 17  | [Callback Function](#callback-function)
+| 19  | [Callback Function](#callback-function)
+| 20  | [Callstack](#Callstack)
+| 21  | [Call, Apply and Bind Functions](#Call,-Apply-and-Bind-Functions)
 
-event loop
+ 
+
 
 
 
@@ -319,7 +322,7 @@ Here's a high-level overview of how the Event loop works in JavaScript:
    
 **[⬆ Back to Top](#table-of-contents)**
 
-16. ### Hoisting
+17. ### Hoisting
 
 
 The behavior of moving variable and function declarations to the top of their respective scopes at compile time, before the code is executed. 
@@ -345,7 +348,7 @@ The behavior of moving variable and function declarations to the top of their re
 **[⬆ Back to Top](#table-of-contents)**
 
 
-17. ### Variable Declaration vs Assignment vs Initialization
+18. ### Variable Declaration vs Assignment vs Initialization
 
 
 **Declaration** creates a variable, **Assignment** assigns a value to a variable, and **Initializatio**n both declares a variable and assigns it a value at the same time.
@@ -378,7 +381,7 @@ Initialization refers to the process of declaring a variable and assigning a val
 
 **[⬆ Back to Top](#table-of-contents)**
 
-18. ### Callback Function
+19. ### Callback Function
 
 
 A **Callback Function** is a function that is passed as an argument to another function, and is executed when that function finishes its task. The idea behind using callbacks is to achieve asynchronous behavior, which allows us to perform tasks without blocking the execution of other code.
@@ -394,6 +397,78 @@ A **Callback Function** is a function that is passed as an argument to another f
    }
 
    doSomething(callbackFunction);
+   ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+20. ### Callstack Function
+
+
+The Call stack is a mechanism that keeps track of function calls. Every time a function is called, a new entry is added to the top of the call stack. When the function completes, its entry is removed from the stack.
+
+   ```javascript
+   function multiply(a, b) {
+   return a * b;
+   }
+   function square(c) {
+   return multiply(c, c);
+   }
+   console.log(square(2)); // Output: 4
+
+   
+   So the call stack looks like this:
+      |         |
+      | square  |
+      | multiply|
+      |_________|
+
+   ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+21. ### Call, Apply and Bind Functions
+
+
+The Call stack is a mechanism that keeps track of function calls. Every time a function is called, a new entry is added to the top of the call stack. When the function completes, its entry is removed from the stack.
+
+1.Function call()
+
+   The JavaScript Function call() method calls a function with a given this value and arguments provided individually.
+
+2.Function apply()
+
+The apply() method is similar to the call() method.
+But The apply() method takes arguments as an array.
+
+3.Function bind()
+
+With the bind() method, an object can borrow a method from another object.
+
+   ```javascript
+      const person = {
+      name: 'John',
+      greet: function(greeting) {
+         console.log(`${greeting}, my name is ${this.name}`);
+      }
+      };
+      const person2 = {
+      name: 'Jane',
+      };
+
+      // Using call()
+      person.greet.call(person2, 'Hi');
+
+      // Using apply()
+      person.greet.apply(person2, ['Hey']);
+
+      // Using bind()
+      const greetBob = person.greet.bind({ name: 'Bob' }, 'Hi there');
+      greetBob();
+
+      /*Output:
+      Hi, my name is Jane
+      Hey, my name is Jane
+      Hi there, my name is Bob*/
    ```
 
 **[⬆ Back to Top](#table-of-contents)**
