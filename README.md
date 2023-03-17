@@ -22,10 +22,11 @@
 | 12  | [Data Types](#Data-Types)
 | 13  | [Scope](#Scope)
 | 14  | [Timer](#Timer)
-| 15  | [Event loop](#Event-Loop)
+| 15  | [Event Loop](#Event-Loop)
 | 16  | [Promise Object](#Promise-Object)
 | 17  | [Hoisting](#Hoisting)
 | 18  | [Variable Declaration vs Assignment vs Initialization](#Variable-Declaration-vs-Assignment-vs-Initialization)
+| 17  | [Callback Function](#callback-function)
 
 event loop
 
@@ -298,7 +299,7 @@ Here's a high-level overview of how the Event loop works in JavaScript:
 16. ### Promise Object
 
 
-Promises in JavaScript are a way to handle asynchronous operations, such as network requests or file I/O etc.
+**Promises** in JavaScript are a way to handle asynchronous operations, such as network requests or file I/O etc.
    The Promise object contains both the producing code and calls to the consuming code.
 
 
@@ -347,11 +348,11 @@ The behavior of moving variable and function declarations to the top of their re
 17. ### Variable Declaration vs Assignment vs Initialization
 
 
-Declaration creates a variable, Assignment assigns a value to a variable, and Initialization both declares a variable and assigns it a value at the same time.
+**Declaration** creates a variable, **Assignment** assigns a value to a variable, and **Initializatio**n both declares a variable and assigns it a value at the same time.
 
 1.Variable Declaration:
 
-When we declare a variable, we are essentially creating a container in memory that can hold a value of a certain data type. we declare variables using the var, let, or const keywords.
+When we declare a variable, we are essentially creating a container in memory that can hold a value of a certain data type. we declare variables using the `var`, `let`, or `const` keywords.
 
    ```javascript
    var a;
@@ -374,5 +375,25 @@ Initialization refers to the process of declaring a variable and assigning a val
    let b = "Hi";
    ```
 
+
+**[⬆ Back to Top](#table-of-contents)**
+
+18. ### Callback Function
+
+
+A **Callback Function** is a function that is passed as an argument to another function, and is executed when that function finishes its task. The idea behind using callbacks is to achieve asynchronous behavior, which allows us to perform tasks without blocking the execution of other code.
+
+   ```javascript
+   function doSomething(callback) {
+   // some code here
+   callback();
+   }
+
+   function callbackFunction() {
+   console.log('Callback function has been called');
+   }
+
+   doSomething(callbackFunction);
+   ```
 
 **[⬆ Back to Top](#table-of-contents)**
