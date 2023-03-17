@@ -28,7 +28,7 @@
 | 18  | [Variable Declaration vs Assignment vs Initialization](#Variable-Declaration-vs-Assignment-vs-Initialization)
 | 19  | [Callback Function](#callback-function)
 | 20  | [Callstack](#Callstack)
-| 21  | [Call, Apply and Bind Functions](#Call,-Apply-and-Bind-Functions)
+| 21  | [Call, Apply and Bind Functions](#Call-,-Apply-and-Bind-Functions)
 
  
 
