@@ -24,6 +24,8 @@
 | 14  | [Timer](#Timer)
 | 15  | [Event loop](#Event-Loop)
 | 16  | [Promise Object](#Promise-Object)
+| 17  | [Hoisting](#Hoisting)
+| 18  | [Variable Declaration vs Assignment vs Initialization](#Variable-Declaration-vs-Assignment-vs-Initialization)
 
 event loop
 
@@ -314,4 +316,63 @@ Promises in JavaScript are a way to handle asynchronous operations, such as netw
 );
    ```
    
+**[⬆ Back to Top](#table-of-contents)**
+
+16. ### Hoisting
+
+
+The behavior of moving variable and function declarations to the top of their respective scopes at compile time, before the code is executed. 
+
+   ```javascript
+   a=2
+   console.log(a); //2
+   var a;
+   ```
+   
+   ```javascript
+   welcome();
+   function welcome() {
+   console.log('Hello!👋'); //Hello!👋
+   }
+   ```
+   If a variable is declared and initialized on the same line,    only the declaration is hoisted.
+
+   ```javascript
+   console.log(a); // undefined
+   var a = 2;
+   ```
+**[⬆ Back to Top](#table-of-contents)**
+
+
+17. ### Variable Declaration vs Assignment vs Initialization
+
+
+Declaration creates a variable, Assignment assigns a value to a variable, and Initialization both declares a variable and assigns it a value at the same time.
+
+1.Variable Declaration:
+
+When we declare a variable, we are essentially creating a container in memory that can hold a value of a certain data type. we declare variables using the var, let, or const keywords.
+
+   ```javascript
+   var a;
+   let b;
+   ```
+2.Variable Assignment
+
+Once a variable is declared, we can assign a value to it using the assignment operator `=`. 
+
+   ```javascript
+   a= 1;
+   b = "Hi";
+   ```
+   3.Variable Initialization
+
+Initialization refers to the process of declaring a variable and assigning a value to it in a single step.
+
+   ```javascript
+   var a = 1;
+   let b = "Hi";
+   ```
+
+
 **[⬆ Back to Top](#table-of-contents)**

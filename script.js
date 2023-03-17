@@ -1,12 +1,3 @@
-let myPromise = new Promise(function(myResolve, myReject) {
-  // "Producing Code"
-
-  myResolve(); // when successful
-  myReject();  // when error
-  });
-
-  // "Consuming Code"
-  myPromise.then(
-  function(value) { /* code if successful */ },
-  function(error) { /* code if some error */ }
-);
+a=2
+console.log(a); //2
+var a;
