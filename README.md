@@ -401,7 +401,8 @@ A **Callback Function** is a function that is passed as an argument to another f
 
 **[⬆ Back to Top](#table-of-contents)**
 
-20. ### Callstack Function
+
+20. ### Callstack
 
 
 The Call stack is a mechanism that keeps track of function calls. Every time a function is called, a new entry is added to the top of the call stack. When the function completes, its entry is removed from the stack.
@@ -425,6 +426,7 @@ The Call stack is a mechanism that keeps track of function calls. Every time a f
    ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
 
 21. ### Call, Apply and Bind Functions
 
