@@ -182,9 +182,7 @@
 
           add();
           add();
-   // the counter is now 2
-  
- ```
+    // the counter is now ```
    
 **[⬆ Back to Top](#table-of-contents)**
 
